@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useTransform } from 'framer-motion';
+import BackgroundRiver from './BackgroundRiver';
 import { Button } from './ui/button';
 import photo from '../assets/jose.jpg';
 import { ChevronDown, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
@@ -96,6 +97,8 @@ const Hero = () => {
       animate="visible"
       variants={containerVariants}
     >
+      {/* Flowing river background layers */}
+      <BackgroundRiver />
       {/* Background Pattern with subtle parallax */}
       <ParallaxBackground />
 
